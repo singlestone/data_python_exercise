@@ -5,6 +5,6 @@ This exercise is designed to show us your python programming skill. Although the
 Your first tasks are to :  
 
 * Clone this repo
-* Unencrypt the project direction file  interview_problem.md the file has been encrypted using ssl and AES-256-CBC.
+* Unencrypt the project direction file  interview_problem.md.encrypted. The file has been encrypted using ssl and AES-256-CBC.
 
 * Follow the directions interview_problem.md
