@@ -8,3 +8,11 @@ Your first tasks are to :
 * Unencrypt the project direction file  interview_problem.md.encrypted. The file has been encrypted using ssl and AES-256-CBC.
 
 * Follow the directions interview_problem.md
+
+Here are some resources on openssl
+https://wiki.openssl.org/index.php/Enc
+
+For Windows:
+https://wiki.openssl.org/index.php/Binaries
+
+
