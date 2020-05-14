@@ -10,10 +10,11 @@ Your first tasks are to :
 * Follow the directions interview_problem.md
 
 ### Here are some resources on openssl   
-  
 https://wiki.openssl.org/index.php/Enc
 
 For Windows:   
 https://wiki.openssl.org/index.php/Binaries
 
+Hint This would be the command in linux to decrypt the file:
 
+openssl enc -aes-256-cbc -d -in interview_problem.md.encrypted > interview_problem.md
