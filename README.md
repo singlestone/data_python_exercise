@@ -9,10 +9,11 @@ Your first tasks are to :
 
 * Follow the directions interview_problem.md
 
-Here are some resources on openssl
+### Here are some resources on openssl   
+  
 https://wiki.openssl.org/index.php/Enc
 
-For Windows:
+For Windows:   
 https://wiki.openssl.org/index.php/Binaries
 
 
