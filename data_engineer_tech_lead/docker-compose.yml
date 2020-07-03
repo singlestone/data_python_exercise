@@ -1,0 +1,20 @@
+ 
+version: '3.1'
+services:
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=singlestone
+      - POSTGRES_USER=singlestone
+      - POSTGRES_DB=singlestone
+    ports:
+      - 5432:5432
+    volumes:
+      - ./config_pg/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./config_pg/customers.csv:/tmp/customers.csv
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
