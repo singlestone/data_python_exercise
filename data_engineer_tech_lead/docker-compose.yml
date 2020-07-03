@@ -22,15 +22,16 @@ services:
     command: mongod --smallfiles
     ports:
       - 27017
+  # remove when working
 
-  mongo_seed:
-    build: mongo-seed/.
-    links:
-      - mongodb
+ # mongo_seed:
+ #   build: mongo-seed/.
+ #   links:
+ #     - mongodb
 
   mongo-express:
     image: mongo-express:latest
     ports:
       - 8081:8081
     environment:
-      ME_CONFIG_MONGODB_SERVER=mongodb
+      - ME_CONFIG_MONGODB_SERVER="mongodb"

@@ -1,10 +1,12 @@
-CREATE TABLE customers (
+CREATE TABLE students (
     id SERIAL PRIMARY KEY,
-    first_name character varying(255),
-    last_name  character varying(255),
-    cc  character varying(255),
-    last_altered TIMESTAMP NOT NULL
+    fname character varying(255),
+    lname character varying(255),
+    email character varying(255),
+    ssn character varying(255),
+    address character varying(255),
+    cid character varying(255)
 );
 
-COPY customers(first_name,last_name,cc, last_altered)
-FROM '/tmp/customers.csv' DELIMITER ',' CSV HEADER;
+COPY students(id, fname, lname, email, ssn, address, cid)
+FROM '/tmp/students.csv' DELIMITER '_' CSV HEADER;
