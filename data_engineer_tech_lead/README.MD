@@ -22,6 +22,19 @@ Hint This would be the command in linux to decrypt the file:
 openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -salt -md sha512 -d -in interview_problem.md.encrypted -pass pass:<provided password> > interview_problem.md
 
 
+### Docker
+
+A docker compose yaml file has been provided. Docker compose will run all docker containers needed for the exercise.
+Here are the basic information needed for interacting with the PostgreSQL and MongoDB data stores.
+
+Username: singlestone
+Password: singlestone
+database: singlestone
+collection: teachers
+table: students
+
+
+
 
 ### Grading
 
@@ -30,3 +43,4 @@ openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -salt -md sha512 -d -in interview_
 * The code has majority of the code covered by unit tests that pass.
 * the code has integration tests that pass.
 * A Github workflow is created that runs pylint, mypy then runs all unit tests.
+
