@@ -20,3 +20,8 @@ https://wiki.openssl.org/index.php/Binaries
 Hint This would be the command in linux to decrypt the file:
 
 openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -salt -md sha512 -d -in interview_problem.md.encrypted -pass pass:<provided password> > interview_problem.md
+
+
+### Grading requirements
+
+In addition to 

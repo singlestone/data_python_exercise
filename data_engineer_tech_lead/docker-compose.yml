@@ -18,3 +18,13 @@ services:
     restart: always
     ports:
       - 8080:8080
+  mongodb:
+    image: mongo
+    command: mongod --smallfiles
+    ports:
+      - 27017
+
+    mongo_seed:
+      build: mongo-seed/.
+      links:
+        - mongodb
