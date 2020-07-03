@@ -2,7 +2,7 @@
 version: '3.1'
 services:
   postgres:
-    image: postgres
+    image: postgres:latest
     environment:
       - POSTGRES_PASSWORD=singlestone
       - POSTGRES_USER=singlestone
@@ -14,17 +14,23 @@ services:
       - ./config_pg/students.csv:/tmp/students.csv
 
   adminer:
-    image: adminer
-    restart: always
+    image: adminer:latest
     ports:
       - 8080:8080
   mongodb:
-    image: mongo
+    image: mongo:latest
     command: mongod --smallfiles
     ports:
       - 27017
 
-    mongo_seed:
-      build: mongo-seed/.
-      links:
-        - mongodb
+  mongo_seed:
+    build: mongo-seed/.
+    links:
+      - mongodb
+
+  mongo-express:
+    image: mongo-express:latest
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_SERVER=mongodb
