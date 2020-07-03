@@ -5,7 +5,7 @@ This repository has two seperate exercises depending on the role:
 
 The expection is that the Python applications follow best practices.
 
-* All code is run through pylint and passes without exception.
+* All code is run through pylint and passes with a 10, **without exception**.
 * Notebooks will not accepted **without exception**. 
 * All code is organized into python modules and a ```__main__.py``` file.
 * All code is organized into functions and classes.
