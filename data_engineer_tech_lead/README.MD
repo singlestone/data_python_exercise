@@ -22,6 +22,11 @@ Hint This would be the command in linux to decrypt the file:
 openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -salt -md sha512 -d -in interview_problem.md.encrypted -pass pass:<provided password> > interview_problem.md
 
 
-### Grading requirements
 
-In addition to 
+### Grading
+
+* follow all directions in the main repository [README](../README.md)
+* Code should use type hinting, the mypy linter will identify any missed type hints.
+* The code has majority of the code covered by unit tests that pass.
+* the code has integration tests that pass.
+* A Github workflow is created that runs pylint, mypy then runs all unit tests.
