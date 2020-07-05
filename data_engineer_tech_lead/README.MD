@@ -22,10 +22,7 @@ Hint This would be the command in linux to decrypt the file:
 openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -salt -md sha512 -d -in interview_problem.md.encrypted -pass pass:<provided password> > interview_problem.md
 
 
-### Docker
-
-A docker compose yaml file has been provided. Docker compose will run all docker containers needed for the exercise.
-Here are the basic information needed for interacting with the PostgreSQL and MongoDB data stores.
+### Connection Information
 
 Username: singlestone    
 Password: singlestone    
@@ -34,7 +31,27 @@ database: singlestone
 (MongoDB) collection: teachers    
 (PostgreSQL)table: students    
 
+MongoDB GUI: http://localhost:8081
+PostGreSQL GUI: http://localhost:8080
 
+**note the GUI's use the HOSTNAME in the docker compose yml file to connect to a data store. When writing code to connect to a data store you will use localhost as the hostname.**
+
+### Docker
+
+A docker compose yaml file has been provided. Docker compose will run all docker containers needed for the exercise.
+Here are the basic information needed for interacting with the PostgreSQL and MongoDB data stores.
+
+
+To startup the local development environment you must:
+
+1. install docker
+2. install docker-compose
+3. run docker-compose up in the folder with the docker-compose.yml
+
+please see the following urls for further reading.
+
+https://docs.docker.com/get-started/overview/
+https://docs.docker.com/compose/gettingstarted/
 
 
 ### Grading
