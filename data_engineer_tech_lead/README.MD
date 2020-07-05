@@ -44,14 +44,14 @@ Here are the basic information needed for interacting with the PostgreSQL and Mo
 
 To startup the local development environment you must:
 
-1. install docker
-2. install docker-compose
-3. run docker-compose up in the folder with the docker-compose.yml
+1. install docker  
+2. install docker-compose  
+3. run docker-compose up in the folder with the docker-compose.yml   
 
-please see the following urls for further reading.
+please see the following urls for further reading.   
 
-https://docs.docker.com/get-started/overview/
-https://docs.docker.com/compose/gettingstarted/
+https://docs.docker.com/get-started/overview/    
+https://docs.docker.com/compose/gettingstarted/   
 
 
 ### Grading
