@@ -27,11 +27,12 @@ openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -salt -md sha512 -d -in interview_
 A docker compose yaml file has been provided. Docker compose will run all docker containers needed for the exercise.
 Here are the basic information needed for interacting with the PostgreSQL and MongoDB data stores.
 
-Username: singlestone
-Password: singlestone
-database: singlestone
-collection: teachers
-table: students
+Username: singlestone    
+Password: singlestone    
+database: singlestone  
+
+(MongoDB) collection: teachers    
+(PostgreSQL)table: students    
 
 
 
