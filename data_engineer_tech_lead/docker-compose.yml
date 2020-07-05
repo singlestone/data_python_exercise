@@ -24,12 +24,17 @@ services:
       - MONGO_INITDB_ROOT_USERNAME=singlestone
       - MONGO_INITDB_ROOT_PASSWORD=singlestone
     volumes:
-     #  - ./config_mongo/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo-js:ro
       - ./config_mongo/teachers.json:/tmp/teachers.json
-    command: mongoimport --jsonArray --db test --collection docs --file example2.json
-
     ports:
       - 27017-27019:27017-27019
+  mongo-seed:
+    image: mongo:latest
+    command: mongoimport  --db singlestone --collection teachers --file /tmp/teachers.json -u singlestone -p singlestone --authenticationDatabase admin -h mongo
+    volumes:
+      - ./config_mongo/teachers.json:/tmp/teachers.json
+
+    depends_on:
+      - mongo
 
   mongo-express:
     image: mongo-express:latest
