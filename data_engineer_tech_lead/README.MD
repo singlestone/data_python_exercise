@@ -32,7 +32,7 @@ database: singlestone
 (PostgreSQL)table: students    
 
 MongoDB GUI: http://localhost:8081   
-PostGreSQL GUI: http://localhost:8080   
+PostGreSQL GUI: http://localhost:8080 
 
 **note the GUI's use the HOSTNAME in the docker compose yml file to connect to a data store. When writing code to connect to a data store you will use localhost as the hostname.**
 
