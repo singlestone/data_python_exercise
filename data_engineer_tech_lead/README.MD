@@ -46,7 +46,7 @@ To startup the local development environment you must:
 
 1. install docker  
 2. install docker-compose  
-3. ```un docker-compose up``` in the folder with the docker-compose.yml   
+3. run ```docker-compose up``` in the folder with the docker-compose.yml   
 
 please see the following urls for further reading.   
 
