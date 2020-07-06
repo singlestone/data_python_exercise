@@ -2,7 +2,7 @@
 
 This exercise is designed to show us your python programming skills. 
 Although the problem isn't very hard, we would like you to tackle the task the same way you would with a client. 
-We expect that you provide us with a python application that follows python best practices as defined by the README at the root of the repository.   
+We expect that you provide us with a python application that follows python best practices as defined by the [README](../README.md) at the root of the repository.   
 
 Your first tasks are to :  
 
