@@ -12,3 +12,4 @@ The expectation is that the Python applications follow best practices.
 * All code is organized into functions and classes.
 * Unit tests and Integration tests are done to a professional level.
 * A ```README.md``` should be created that explains how to run the application. 
+* code must include a requirements.txt file.
