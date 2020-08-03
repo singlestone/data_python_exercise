@@ -61,6 +61,6 @@ https://docs.docker.com/compose/gettingstarted/
 * follow all directions in the main repository [README](../README.md)
 * Code should use type hinting. The mypy linter will identify any missed type hints.
 * The code has 50% or more of code coverage with unit tests.
-* the code has integration tests that pass.
-* A Github workflow is created that runs pylint, mypy then runs all unit tests.
+* the code has integration tests.
+* A Github action workflow is created that runs pylint, mypy then runs all unit tests.
 
