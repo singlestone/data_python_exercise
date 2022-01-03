@@ -1,22 +1,17 @@
-## Data Python Exercise
+## Data Engineer Python Exercise  
 
-This exercise is designed to show us your python programming skills. 
-Although the problem isn't very hard, we would like you to tackle the task the same way you would with a client. 
-We expect that you provide us with a python application that follows python best practices as defined by the [README](../README.md) at the root of the repository.   
+For this exercise, please write a Python application that processes 
+two data files:
 
-Your first tasks are to :  
+1. `students.csv` containing student data
+2. `teachers.parquet` containing teacher data
 
-* Clone this repo
-* Un-encrypt the project direction file  ```interview_problem.md.encrypted```. The file has been encrypted using the AES-256-CBC algorithm with openssl.  
+From these files, generate an output file in json listing:
 
-* Follow the directions interview_problem.md
+1. Each student
+2. The teacher the student has
+3. he class ID the student is scheduled for
 
-### Here are some resources on openssl   
-https://wiki.openssl.org/index.php/Enc
-
-For Windows:   
-https://wiki.openssl.org/index.php/Binaries
-
-Hint This would be the command in linux to decrypt the file:
-
-```openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -salt -md sha512 -d -in interview_problem.md.encrypted -pass pass:(provided password) > interview_problem.md```
+Assumptions:
+An analyst with no Python coding ability should be able to setup and run the 
+app using the directions provided.
